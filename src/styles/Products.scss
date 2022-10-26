@@ -1,0 +1,30 @@
+.products {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+    .items {
+        display: flex;
+        flex-direction: column;
+    
+        :not(:first-child) {
+            margin-top: 2px;
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+
+        .items {
+            display: flex;
+            flex-direction: column;
+            
+            :not(:first-child) {
+                margin-top: 4px;
+            }
+        }
+    }
+}
